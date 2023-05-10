@@ -1,0 +1,651 @@
+{% extends 'hf.html' %}
+{% block content %}
+       <!--counting-->
+   <h1 class="Counting" id="Counting" style="margin-top: 80px">
+    <center>Counting dan Pelanggaran</center>
+  </h1>
+  <div class="container" style="margin-top: 40px">
+    <div class="row align-items">
+      <div class="col-4" style="margin-bottom: 20px">
+        <div class="card bg-light" style="width: auto">
+          <img
+            src="{{ url_for('video_feed') }}"
+            class="card-img-top"
+            style="border: 1px solid black; width: 100%"
+            alt="On Ramp Boulevard"
+          />
+          <div class="card-body">
+            <center><h5 class="card-title">On Ramp Boulevard</h5></center>
+            <center>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#cctv1"
+                style="width: auto"
+              >
+                Detail
+              </button>
+            </center>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="cctv1"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  On Ramp Boulevard
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p align="center">On Ramp Boulevard</p>
+                <img
+                  src="{{ url_for('video_feed') }}"
+                  class="center"
+                  style="border: 2px solid black; width: 100%"
+                  alt="On Ramp Boulevard"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4" style="margin-bottom: 20px">
+        <div class="card bg-light" style="width: auto">
+          <img
+            src="{{ url_for('video_feed1') }}"
+            class="card-img-top"
+            style="border: 1px solid black; width: 100%"
+            alt="On Ramp Alauddin"
+          />
+          <div class="card-body">
+            <center><h5 class="card-title">On Ramp Alauddin 1</h5></center>
+            <center>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#cctv5"
+                style="width: auto"
+              >
+                Detail
+              </button>
+            </center>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="cctv5"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  On Ramp Alauddin 1
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p align="center">On Ramp Alauddin 1</p>
+                <img
+                  src="{{ url_for('video_feed1') }}"
+                  class="center"
+                  style="border: 2px solid black; width: 100%"
+                  alt="On Ramp Alauddin"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     
+      <div class="col-4" style="margin-bottom: 20px">
+        <div class="card bg-light" style="width: auto">
+          <img
+            src="{{ url_for('video_feed3') }}"
+            class="card-img-top"
+            style="border: 1px solid black; width: 100%"
+            alt="Off Ramp Rappokalling"
+          />
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Off Ramp Rappokalling</h5>
+            </center>
+            <center>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#pelanggaran1"
+                style="width: auto"
+              >
+                Detail
+              </button>
+            </center>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="pelanggaran1"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Off Ramp Rappokalling
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p align="center">Off Ramp Rappokalling</p>
+                <img
+                  src="{{ url_for('video_feed3') }}"
+                  class="center"
+                  style="border: 2px solid black; width: 100%"
+                  alt="Off Ramp Rappokalling"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4" style="margin-bottom: 20px">
+        <div class="card bg-light" style="width: auto">
+          <img
+            src="{{ url_for('video_feed4') }}"
+            class="card-img-top"
+            style="border: 1px solid black; width: 100%"
+            alt="Off Ramp Tallo Timur"
+          />
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Off Ramp Tallo Timur</h5>
+            </center>
+            <center>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#tallo"
+                style="width: auto"
+              >
+                Detail
+              </button>
+            </center>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="tallo"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Off Ramp Tallo Timur
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p align="center">Off Ramp Tallo Timur</p>
+                <img
+                  src="{{ url_for('video_feed4') }}"
+                  class="center"
+                  style="border: 2px solid black; width: 100%"
+                  alt="Off Ramp Tallo Timur"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4" style="margin-bottom: 20px">
+        <div class="card bg-light" style="width: auto">
+          <img
+            src="{{ url_for('video_feed2') }}"
+            class="card-img-top"
+            style="border: 1px solid black; width: 100%"
+            alt="Off Ramp Boulevard"
+          />
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Off Ramp Boulevard</h5>
+            </center>
+            <center>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#tallo"
+                style="width: auto"
+              >
+                Detail
+              </button>
+            </center>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="tallo"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Off Ramp Boulevard
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p align="center">Off Ramp Boulevard</p>
+                <img
+                  src="{{ url_for('video_feed2') }}"
+                  class="center"
+                  style="border: 2px solid black; width: 100%"
+                  alt="Off Ramp Boulevard"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-4" style="margin-bottom: 20px">
+        <div class="card bg-light" style="width: auto">
+          <img
+            src="{{ url_for('video_feed5') }}"
+            class="card-img-top"
+            style="border: 1px solid black; width: 100%"
+            alt="Off Ramp Alauddin"
+          />
+          <div class="card-body">
+            <center>
+              <h5 class="card-title">Off Ramp Alauddin</h5>
+            </center>
+            <center>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#tallo"
+                style="width: auto"
+              >
+                Detail
+              </button>
+            </center>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="tallo"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Off Ramp Alauddin
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p align="center">Off Ramp Alauddin</p>
+                <img
+                  src="{{ url_for('video_feed5') }}"
+                  class="center"
+                  style="border: 2px solid black; width: 100%"
+                  alt="Off Ramp Boulevard"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        selesai();
+  });
+   
+  
+  function selesai() {
+      setTimeout(function() {
+          getapi("http://192.168.0.211:5000/getdata");
+          selesai();
+          pesan();
+      }, 10000);
+  }
+  async function getapi(url) {
+
+    // Storing response
+    const response = await fetch(url);
+    
+    // Storing data in form of JSON
+    var data = await response.json();
+    
+    // Menyimpan variabel time dan memotong string yang tidak perlu
+    data2 = data.result[0].time;
+    data3 = data2.slice(0,-3)
+    var plg = new Date(data3).getTime();
+
+    // Menyimpan data waktu sekarang
+    var today = new Date().getTime();
+
+    // Menampilkan data di log
+    console.log(plg);
+    console.log(today);
+
+    if (response) {
+        hideloader();
+    }
+
+    // Melakukan perhitungan matematis untuk melihat
+    // range waktu terkini dan waktu pelanggaran terjadi
+    const diff = today - plg;
+    const seconds = Math.floor(diff / 1000);
+    console.log(seconds);
+
+    // memanggil function show data
+    var no =0;
+    show(data);
+    $("#notif").html(no);
+
+    // Mengecek range waktu untuk menampilkan modals
+    if (seconds <= 7 && seconds >= 0){
+      no = no +1 ;
+      $("#notif").html(no);
+      document.getElementById("alert").click();
+      
+    }   
+
+}
+
+// Function to hide the loader
+function hideloader() {
+    document.getElementById('loading').style.display = 'none';
+}
+
+// Function to show modals
+function show(data){
+  if(data.result[0].jp == "Melawan Arus" || data.result[0].jp == "Over Speed"){
+    let modals  =
+    `
+    <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <b><h5 class="modal-title" id="exampleModalLabel">Telah Terjadi Pelanggaran</h5></b>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <center><b><h5>
+                  LAPORAN PELANGGARAN LALU LINTAS
+              </h5></b></center>
+              </br>
+              Telah terjadi pelanggaran lalu lintas dengan detail sebagai berikut : 
+              <table spacing='10' style='margin-top:20px;'>
+                  <tr>
+                      <td>Jenis Pelanggaran </td>
+                      <td>: `+data.result[0].jp+`</td> 
+                  </tr>
+                  <tr>
+                      <td>Lokasi </td>
+                      <td>: `+data.result[0].lokasi+` </td> 
+                  </tr>
+                  <tr>
+                      <td>Waktu </td>
+                      <td>: `+data.result[0].time+`</td> 
+                  </tr>
+                </tr>
+              </table>
+              <img
+                    src="http://192.168.0.211:5000/static/counting000/`+data.result[0].dir.substr(11, 30)+`/melawan_arus/`+data.result[0].gambar+`"
+                    class="d-block w-100 h-75 rounded"
+                    alt="..."/>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Exit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    document.getElementById("modalpelanggaran").innerHTML = modals;
+  }
+  else{
+    let modals  =
+    `
+    <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <b><h5 class="modal-title" id="exampleModalLabel">Telah Terjadi Pelanggaran</h5></b>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <center><b><h5>
+                  LAPORAN PELANGGARAN LALU LINTAS
+              </h5></b></center>
+              </br>
+              Telah terjadi pelanggaran lalu lintas dengan detail sebagai berikut : 
+              <table spacing='10' style='margin-top:20px;'>
+                  <tr>
+                      <td>Jenis Pelanggaran </td>
+                      <td>: `+data.result[0].jp+`</td> 
+                  </tr>
+                  <tr>
+                      <td>Lokasi </td>
+                      <td>: `+data.result[0].lokasi+` </td> 
+                  </tr>
+                  <tr>
+                      <td>Waktu </td>
+                      <td>: `+data.result[0].time+`</td> 
+                  </tr>
+                </tr>
+              </table>
+              <img
+                    src="http://192.168.0.211:5000/static/counting000/`+data.result[0].dir.substr(11, 30)+`/person/`+data.result[0].gambar+`"
+                    class="d-block w-100 h-75 rounded"
+                    alt="..."/>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Exit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    document.getElementById("modalpelanggaran").innerHTML = modals;
+    
+  }
+  
+}
+  function pesan() {
+      $.getJSON("http://192.168.0.211:5000/getdata", function(data) {
+        $("#pesan").empty();
+          var no = 1;
+            $.each(data.result, function() {
+              if(this['jp']=="Melawan Arus" || this['jp']=="Over Speed"){
+                $("#pesan").append(`
+                <a id="pesan"
+                  href="http://192.168.0.211/cctv/detail_pelanggaran.php" target="_blank"
+                  class="dropdown-item"
+                  role="button"
+                  style="height: auto; width:250px;"
+                  type="button"
+                  ><span
+                    ><i
+                      class="fa-sharp fa-solid fa-envelope"
+                      aria-pressed="true"
+                    ></i
+                  ></span>
+                  `+this['jp']+`
+                  <p>`+this['lokasi']+`</p>
+                  <p>`+this['time']+` </p> 
+                  <img
+                    src="static/counting000/`+this['dir'].substr(11, 30)+`/melawan_arus/`+this['gambar']+`"
+                    class="d-block w-100 h-75 rounded"
+                    alt="..."/>
+                  </a>
+                </li>
+            </ul>`);}
+            else if(this['jp']=="Ada Orang"){
+                  $("#pesan").append(`
+                  <a id="pesan"
+                    href="http://192.168.0.211/cctv/detail_pelanggaran.php" target="_blank"
+                    class="dropdown-item"
+                    role="button"
+                    style="height: auto; width:250px;"
+                    type="button"
+                    ><span
+                      ><i
+                        class="fa-sharp fa-solid fa-envelope"
+                        aria-pressed="true"
+                      ></i
+                    ></span>
+                    `+this['jp']+`
+                    <p>`+this['lokasi']+`</p>
+                    <p>`+this['time']+` </p> 
+                    <img
+                      src="static/counting000/`+this['dir'].substr(11, 30)+`/person/`+this['gambar']+`"
+                      class="d-block w-100 h-75 rounded"
+                      alt="..."/>
+                    </a>
+                  </li>
+              </ul>`);}
+            });
+          
+            });
+          }
+    
+  </script>
+{% endblock  %}
